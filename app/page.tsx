@@ -146,8 +146,8 @@ export default function Home() {
       <section className="bg-blue-700 text-white px-6 py-16 text-center" id="contact">
         <h2 className="text-2xl font-bold mb-4">지금 바로 무료 상담 신청하세요</h2>
         <p className="text-blue-100 mb-8">경쟁 가게들이 시작하기 전에 선점하는 것이 핵심입니다</p>
-        <a href="tel:010-0000-0000" className="bg-white text-blue-700 font-bold text-xl px-10 py-5 rounded-xl inline-block">
-          010-0000-0000
+        <a href="tel:010-2364-4656" className="bg-white text-blue-700 font-bold text-xl px-10 py-5 rounded-xl inline-block">
+          010-2364-4656
         </a>
         <p className="text-blue-200 text-sm mt-4">평일 오전 9시 ~ 오후 6시 운영</p>
       </section>
