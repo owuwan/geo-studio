@@ -1,32 +1,31 @@
+import Header from "./components/Header"
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
 
-      <header className="bg-white border-b border-gray-100 px-6 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold text-blue-700">GEO Studio</div>
-        <a href="#contact" className="bg-blue-700 text-white text-sm px-4 py-2 rounded-lg">
-          무료 상담 신청
-        </a>
-      </header>
+      <Header />
 
-      <section className="bg-blue-50 px-6 py-20 text-center">
+      <section className="bg-gradient-to-b from-blue-50 to-white px-6 py-20 text-center">
         <p className="text-blue-600 text-sm font-semibold mb-3">AI 검색 최적화 홈페이지 전문 제작</p>
-        <h1 className="text-4xl font-bold mb-6">
-          ChatGPT가 우리 가게를<br />
+        <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+          ChatGPT가 우리 가게를
+          <br />
           <span className="text-blue-700">직접 추천</span>하게 만드세요
         </h1>
         <p className="text-gray-600 text-lg mb-4 max-w-xl mx-auto">
-          손님들이 AI에게 ○○동 맛집 추천해줘 라고 물어볼 때 내 음식점이 나오게 만드는 GEO 홈페이지 전문 제작사입니다.
+          손님들이 AI에게 ○○동 맛집 추천해줘 라고 물어볼 때
+          내 음식점이 나오게 만드는 GEO 홈페이지 전문 제작사입니다.
         </p>
         <p className="text-gray-500 text-sm mb-8">
           주변 경쟁 음식점 100곳 중 1~2곳만 하고 있는 지금이 선점 타이밍입니다.
         </p>
-        <a href="#contact" className="bg-blue-700 text-white text-lg px-8 py-4 rounded-xl inline-block">
+        <a href="/contact" className="bg-blue-700 text-white text-lg px-8 py-4 rounded-xl inline-block hover:bg-blue-800">
           지금 바로 상담 신청하기
         </a>
       </section>
 
-      <section className="px-6 py-16 max-w-3xl mx-auto">
+      <section className="px-6 py-16 max-w-5xl mx-auto">
         <h2 className="text-2xl font-bold text-center mb-10">혹시 이런 상황 아닌가요?</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-gray-50 rounded-xl p-6 text-center">
@@ -45,21 +44,25 @@ export default function Home() {
       </section>
 
       <section className="bg-blue-700 text-white px-6 py-16">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-6">GEO란 무엇인가요?</h2>
-          <p className="text-blue-100 text-lg mb-8">
-            GEO는 ChatGPT, 클로드, 제미나이 같은 AI가 맛집을 추천할 때 내 가게를 포함시키도록 최적화하는 전략입니다.
+          <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+            GEO(Generative Engine Optimization)는 ChatGPT, 클로드, 제미나이 같은
+            AI가 맛집을 추천할 때 내 가게를 포함시키도록 최적화하는 전략입니다.
           </p>
-          <div className="grid md:grid-cols-2 gap-6 text-left">
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto text-left">
             <div className="bg-blue-600 rounded-xl p-6">
               <div className="font-bold text-lg mb-2">기존 SEO</div>
-              <div className="text-sm">네이버 구글 검색 결과 1페이지에 노출</div>
+              <div className="text-sm text-blue-100">네이버 구글 검색 결과 1페이지에 노출</div>
             </div>
             <div className="bg-white text-blue-700 rounded-xl p-6">
               <div className="font-bold text-lg mb-2">GEO 지금 필요한 것</div>
-              <div className="text-sm">AI가 맛집 추천할 때 내 가게를 직접 언급</div>
+              <div className="text-sm text-blue-600">AI가 맛집 추천할 때 내 가게를 직접 언급</div>
             </div>
           </div>
+          <a href="/geo-guide" className="mt-8 inline-block bg-white text-blue-700 font-bold px-6 py-3 rounded-xl hover:bg-blue-50">
+            GEO 완전 가이드 보기
+          </a>
         </div>
       </section>
 
@@ -75,38 +78,45 @@ export default function Home() {
             <div className="bg-blue-700 text-white text-sm px-4 py-2 rounded-lg">선점 타이밍</div>
           </div>
           <div className="space-y-4 mb-8">
-            <div className="flex items-start gap-3">
-              <span className="text-blue-700 font-bold">✓</span>
-              <span className="text-gray-700">반응형 홈페이지 제작 (모바일 완벽 대응)</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-blue-700 font-bold">✓</span>
-              <span className="text-gray-700">홈페이지 명의 완전 이전 — 사장님 소유, 추가 비용 없음</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-blue-700 font-bold">✓</span>
-              <span className="text-gray-700">도메인 1년 무료 제공</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-blue-700 font-bold">✓</span>
-              <span className="text-gray-700">AI 검색 최적화 글 월 8~12개 자동 업로드 (6개월)</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-blue-700 font-bold">✓</span>
-              <span className="text-gray-700">구글 비즈니스 프로필 등록 대행</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-blue-700 font-bold">✓</span>
-              <span className="text-gray-700">Schema 구조화 데이터 세팅 — AI가 가게를 정확히 인식</span>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-blue-700 font-bold">✓</span>
-              <span className="text-gray-700">6개월 후 유지비 월 5만원 (원하실 때 해지 가능)</span>
-            </div>
+            <div className="flex items-start gap-3"><span className="text-blue-700 font-bold">✓</span><span className="text-gray-700">반응형 홈페이지 제작 (모바일 완벽 대응)</span></div>
+            <div className="flex items-start gap-3"><span className="text-blue-700 font-bold">✓</span><span className="text-gray-700">홈페이지 명의 완전 이전 — 사장님 소유, 추가 비용 없음</span></div>
+            <div className="flex items-start gap-3"><span className="text-blue-700 font-bold">✓</span><span className="text-gray-700">도메인 1년 무료 제공</span></div>
+            <div className="flex items-start gap-3"><span className="text-blue-700 font-bold">✓</span><span className="text-gray-700">AI 검색 최적화 글 월 8~12개 자동 업로드 (6개월)</span></div>
+            <div className="flex items-start gap-3"><span className="text-blue-700 font-bold">✓</span><span className="text-gray-700">구글 비즈니스 프로필 등록 대행</span></div>
+            <div className="flex items-start gap-3"><span className="text-blue-700 font-bold">✓</span><span className="text-gray-700">Schema 구조화 데이터 세팅 — AI가 가게를 정확히 인식</span></div>
+            <div className="flex items-start gap-3"><span className="text-blue-700 font-bold">✓</span><span className="text-gray-700">6개월 후 유지비 월 5만원 (원하실 때 해지 가능)</span></div>
           </div>
-          <a href="#contact" className="block bg-blue-700 text-white text-center py-4 rounded-xl text-lg font-semibold">
+          <a href="/contact" className="block bg-blue-700 text-white text-center py-4 rounded-xl text-lg font-semibold hover:bg-blue-800">
             지금 상담 신청하기
           </a>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 px-6 py-16">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-10">AI 검색 노출 Best 3 사례</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="text-blue-600 text-xs font-bold mb-2">1st — 세팅 후 3주</div>
+              <h3 className="font-bold mb-2">청라 이탈리안 레스토랑</h3>
+              <p className="text-gray-500 text-sm">플레이스 리뷰 200개 보유 상태에서 GEO 세팅 후 3주 만에 ChatGPT 추천 진입</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="text-blue-600 text-xs font-bold mb-2">2nd — 세팅 후 5주</div>
+              <h3 className="font-bold mb-2">인천 서구 일식당</h3>
+              <p className="text-gray-500 text-sm">플레이스 리뷰 120개 + 초기 콘텐츠 20개로 5주 만에 제미나이, ChatGPT 추천 진입</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <div className="text-blue-600 text-xs font-bold mb-2">3rd — 세팅 후 8주</div>
+              <h3 className="font-bold mb-2">부평 한식 브런치 카페</h3>
+              <p className="text-gray-500 text-sm">인스타 활동 + 상황별 콘텐츠 전략으로 8주 만에 클로드, 네이버 AI 추천 진입</p>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <a href="/cases" className="text-blue-700 font-semibold text-sm hover:underline">
+              사례 자세히 보기
+            </a>
+          </div>
         </div>
       </section>
 
@@ -123,38 +133,48 @@ export default function Home() {
 
       <section className="px-6 py-16 max-w-3xl mx-auto">
         <h2 className="text-2xl font-bold text-center mb-10">자주 묻는 질문</h2>
-        <div className="space-y-6">
+        <div className="space-y-4">
           <div className="border border-gray-200 rounded-xl p-6">
             <div className="font-semibold text-gray-900 mb-2">Q. 홈페이지 만들어도 손님이 직접 방문하지 않지 않나요?</div>
-            <div className="text-gray-600 text-sm">A. 맞습니다. 이 홈페이지는 손님이 보러 오는 홈페이지가 아니라 AI가 읽고 추천하기 위한 홈페이지입니다. ChatGPT가 맛집을 추천할 때 공식 홈페이지의 구조화된 데이터를 참조합니다.</div>
+            <div className="text-gray-600 text-sm">A. 이 홈페이지는 손님이 보러 오는 홈페이지가 아니라 AI가 읽고 추천하기 위한 홈페이지입니다.</div>
           </div>
           <div className="border border-gray-200 rounded-xl p-6">
             <div className="font-semibold text-gray-900 mb-2">Q. 효과가 언제부터 나타나나요?</div>
-            <div className="text-gray-600 text-sm">A. 구글 인덱싱 후 보통 1~3개월부터 AI 검색에 노출되기 시작합니다. 콘텐츠가 쌓일수록 노출 빈도가 높아집니다.</div>
+            <div className="text-gray-600 text-sm">A. 구글 인덱싱 후 보통 1~3개월부터 AI 검색에 노출되기 시작합니다.</div>
           </div>
           <div className="border border-gray-200 rounded-xl p-6">
             <div className="font-semibold text-gray-900 mb-2">Q. 6개월 후 해지하면 홈페이지는 어떻게 되나요?</div>
-            <div className="text-gray-600 text-sm">A. 홈페이지는 처음부터 사장님 명의로 이전됩니다. 해지 후에도 홈페이지는 그대로 유지됩니다. 콘텐츠 자동 업로드만 중단됩니다.</div>
+            <div className="text-gray-600 text-sm">A. 홈페이지는 처음부터 사장님 명의로 이전됩니다. 해지 후에도 홈페이지는 그대로 유지됩니다.</div>
           </div>
-          <div className="border border-gray-200 rounded-xl p-6">
-            <div className="font-semibold text-gray-900 mb-2">Q. 네이버 플레이스는 따로 해야 하나요?</div>
-            <div className="text-gray-600 text-sm">A. 네이버 플레이스는 사장님이 직접 운영하시는 것이 가장 효과적입니다. 저희는 구글 비즈니스 등록을 대행해드립니다.</div>
-          </div>
+        </div>
+        <div className="text-center mt-8">
+          <a href="/faq" className="text-blue-700 font-semibold text-sm hover:underline">FAQ 전체 보기</a>
         </div>
       </section>
 
       <section className="bg-blue-700 text-white px-6 py-16 text-center" id="contact">
         <h2 className="text-2xl font-bold mb-4">지금 바로 무료 상담 신청하세요</h2>
         <p className="text-blue-100 mb-8">경쟁 가게들이 시작하기 전에 선점하는 것이 핵심입니다</p>
-        <a href="tel:010-2364-4656" className="bg-white text-blue-700 font-bold text-xl px-10 py-5 rounded-xl inline-block">
-          010-2364-4656
+        <a href="tel:010-2364-4656" className="bg-white text-blue-700 font-bold text-xl px-10 py-5 rounded-xl inline-block hover:bg-blue-50">
+          전화 010-2364-4656
         </a>
         <p className="text-blue-200 text-sm mt-4">평일 오전 9시 ~ 오후 6시 운영</p>
       </section>
 
-      <footer className="px-6 py-8 text-center text-gray-400 text-sm border-t">
-        <p className="font-semibold text-gray-600 mb-1">GEO Studio</p>
-        <p>AI 검색 최적화 홈페이지 전문 제작 | geo-studio.kr</p>
+      <footer className="px-6 py-8 border-t">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <div>
+            <p className="font-bold text-gray-700 mb-1">GEO Studio</p>
+            <p className="text-gray-400 text-sm">AI 검색 최적화 홈페이지 전문 제작 | geo-studio.kr</p>
+          </div>
+          <nav className="flex gap-4">
+            <a href="/geo-guide" className="text-gray-400 text-sm hover:text-blue-700">GEO란?</a>
+            <a href="/restaurant" className="text-gray-400 text-sm hover:text-blue-700">음식점 전략</a>
+            <a href="/cases" className="text-gray-400 text-sm hover:text-blue-700">납품 사례</a>
+            <a href="/faq" className="text-gray-400 text-sm hover:text-blue-700">FAQ</a>
+            <a href="/contact" className="text-gray-400 text-sm hover:text-blue-700">상담 신청</a>
+          </nav>
+        </div>
       </footer>
 
     </main>
