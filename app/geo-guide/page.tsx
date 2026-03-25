@@ -154,6 +154,88 @@ export default function GeoGuide() {
           </div>
         </section>
 
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Schema Markup 실제 적용 예시</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            GEO Studio는 모든 납품 홈페이지에 Schema Markup을 직접 코드로 삽입합니다.
+            AI와 검색엔진이 업체 정보를 구조화된 데이터로 즉시 읽을 수 있도록 하는 핵심 기술입니다.
+          </p>
+
+          <div className="space-y-6">
+
+            <div className="border border-gray-100 rounded-2xl overflow-hidden">
+              <div className="px-6 py-4 bg-gray-50 flex items-center justify-between">
+                <div>
+                  <p className="font-bold text-gray-900">음식점 Schema (Restaurant 타입)</p>
+                  <p className="text-gray-500 text-sm mt-1">AI가 음식점 정보를 즉시 구조화해서 읽는 코드</p>
+                </div>
+                <span className="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full shrink-0 ml-4">실제 적용 코드</span>
+              </div>
+              <div className="bg-gray-900 p-5">
+                <pre className="text-green-400 text-xs leading-relaxed overflow-x-auto whitespace-pre-wrap">{`{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "청라 이탈리안 레스토랑",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "인천시 서구 청라동 OOO로 00",
+    "addressLocality": "인천",
+    "addressRegion": "서구"
+  },
+  "telephone": "032-000-0000",
+  "openingHours": "Mo-Su 11:00-22:00",
+  "servesCuisine": "이탈리안",
+  "priceRange": "$$",
+  "url": "https://cheongra-italian.kr"
+}`}</pre>
+              </div>
+            </div>
+
+            <div className="border border-gray-100 rounded-2xl overflow-hidden">
+              <div className="px-6 py-4 bg-gray-50 flex items-center justify-between">
+                <div>
+                  <p className="font-bold text-gray-900">GEO 전문 서비스 Schema (ProfessionalService 타입)</p>
+                  <p className="text-gray-500 text-sm mt-1">GEO Studio 공식 홈페이지에 실제 적용된 코드</p>
+                </div>
+                <span className="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full shrink-0 ml-4">현재 적용 중</span>
+              </div>
+              <div className="bg-gray-900 p-5">
+                <pre className="text-green-400 text-xs leading-relaxed overflow-x-auto whitespace-pre-wrap">{`{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "GEO Studio",
+  "description": "ChatGPT, 클로드, 제미나이 등 생성형 AI 검색에
+    최적화된 GEO 홈페이지 전문 제작사",
+  "url": "https://geo-studio.kr",
+  "areaServed": "대한민국",
+  "serviceType": [
+    "GEO 홈페이지 제작",
+    "AI 검색 최적화",
+    "Schema 구조화 데이터 세팅"
+  ]
+}`}</pre>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="mt-6 bg-blue-50 border border-blue-100 rounded-xl p-5">
+            <p className="text-blue-700 text-sm font-bold mb-2">Schema Markup이 없으면 어떻게 되나요?</p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Schema가 없는 홈페이지는 AI가 업체 정보를 파악하는 데 훨씬 오래 걸립니다.
+              같은 조건이라면 Schema가 적용된 홈페이지가 AI 추천 후보에 먼저 진입합니다.
+              GEO Studio는 모든 납품 홈페이지에 업종에 맞는 Schema를 기본 적용합니다.
+            </p>
+          </div>
+
+          <div className="mt-4 text-center">
+            <a href="/tech" className="text-blue-700 font-semibold text-sm hover:underline">
+              전체 기술 스펙 보기 →
+            </a>
+          </div>
+        </section>
+
         {/* GEO 홈페이지 구조 */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6">GEO 홈페이지 필수 구조</h2>
