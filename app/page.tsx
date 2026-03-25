@@ -121,7 +121,7 @@ const faqs = [
 ]
 
 export default function Home() {
-  const [openFaq, setOpenFaq] = useState(null)
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   return (
     <main className="min-h-screen bg-white text-gray-900">
